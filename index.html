@@ -1,5 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    img.logo {
+        max-height: 100px;
+        max-width: 50%;
+        width: auto;
+    }
+    div {
+        display: flex;
+        justify-content: center;
+    }
+    .font {
+        font-family: "Quicksand";
+    }
+    .button {
+        border: none;
+        color: white;
+        font-family: "Quicksand";
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        }
+
+    .button1 {
+        background-color: white; 
+        color: black; 
+        border: 5px solid #242424;
+    }
+
+    .button1:hover {
+        background-color: #000000;
+        color: white;
+    }
+
+</style>
 <head>
-    <img src="Zuzuzasta_Logo.png" alt="Zuzuzasta logotype">
+
+    <meta charset="UTF-8">
+    <title>Zuzuzasta - engineering - photography - design - Zuzanna Stachlewska</title>
+
 </head>
+
+<body>
+    <div>
+        <img class="logo" src="Zuzuzasta-Logo.png" alt="Zuzuzasta logotype">
+    </div> 
+    <div>
+        <p class="font"> engineering - photography - design </p>
+    </div> 
+    
+    <div>
+    <button class="button button1" onclick="window.location='https://www.linkedin.com/in/zuzanna-stachlewska';">
+        LinkedIn
+    </button>
+    </div>
+
+</body>
+
+</html>
