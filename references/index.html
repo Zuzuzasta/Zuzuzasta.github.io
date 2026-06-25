@@ -5,13 +5,136 @@
     html, body {
         margin: 0; 
         height: 100%; 
-        overflow: hidden
     }
+
+    img.logo {
+        max-height: 100px;
+        max-width: 50%;
+        width: auto;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        min-height: 100vh;
+    }
+
+    .references {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items:center;
+        max-width: 80%;
+    }
+
+    .font {
+        font-family: "Quicksand";
+        font-size: 16px;
+    }
+
+    .font2 {
+        font-family: "Quicksand";
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    .button {
+        border: none;
+        color: white;
+        font-family: "Quicksand";
+        width: 45%;
+        min-width: 200px;
+        min-height: 200px;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        }
+
+    .button1 {
+        background-color: white; 
+        color: black; 
+        font-weight: bold;
+        border: 5px solid #242424;
+        border-radius: 15px;
+    }
+
+    .button1:hover {
+        background-color: #000000;
+        color: white;
+    }
+
+    @media only screen and (max-width: 600px) {
+
+        img.logo {
+            max-height: 100px;
+            max-width: 80%;
+        }
+
+        .button {
+            width: 80%;
+            min-width: 0;
+            padding: 12px 16px;
+            font-size: 24px;
+        }
+
+        .font {
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        .font2 {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 12px;
+            font-weight: bold;
+        }
+    }
+
 </style>
 
 <head>
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zuzuzasta - references - Zuzanna Stachlewska</title>
 
 </head>
+
+<body>
+    <div class="container">
+        <img class="logo" src="../Zuzuzasta-Logo_2.png" alt="Zuzuzasta logotype"> 
+
+        <p class="font"> engineering - photography - design </p> 
+
+        <p class="font2"> Category: engineering and proffesional </p> 
+
+        <div class="references">
+
+            <button class="button button1" type="submit" onclick="window.open('Recommendation of Zuzanna Stachlewska.pdf')">
+                Jesper Vejlø Carstensen (Everlence) - Recommendation of Zuzanna Stachlewska (2025)
+            </button>
+
+            <button class="button button1" type="submit" onclick="window.open('Recommendation of Zuzanna Stachlewska.pdf')">
+                Language certification - Prøve i Dansk 2 (PD2) - (2023)
+            </button>
+        </div>
+
+        <p class="font2"> Category: photography and design </p> 
+
+        <div class="references">
+            <button class="button button1" onclick="window.location='https://mail.monovisionsawards.com/winners-gallery/monovisions-awards-2024/show/10767';">
+                Monovisions awards - Honorable mention (2024)
+            </button>
+
+            <button class="button button1" onclick="window.location='https://darkgallery.dk/';">
+                Dark Gallery CPH - rookie partner (2025 - )
+            </button>
+        </div>
+    </div>
+</body>
