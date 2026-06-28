@@ -15,10 +15,10 @@
 </head>
 
 <style>
-
-    html, body {
-        margin: 0; 
-        height: 100%; 
+    html,
+    body {
+        margin: 0;
+        height: 100%;
         overflow: visible;
     }
 
@@ -27,14 +27,30 @@
         width: auto;
         min-width: 320px;
         display: block;
-        flex-shrink: 0;  
+        flex-shrink: 0;
     }
-    
+
+    img.button-back {
+        height: 36px;
+        width: auto;
+        min-width: 75px;
+        display: block;
+        flex-shrink: 0;
+    }
+
+    .button-back-container {
+
+        justify-content: left;
+        min-width: 80%;
+        margin-bottom: 5%;
+    }
+
+
     .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items:center;
+        align-items: center;
         min-height: 100vh;
     }
 
@@ -51,7 +67,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items:center;
+        align-items: center;
         max-width: 45vh;
     }
 
@@ -79,6 +95,7 @@
             text-align: center;
             margin-bottom: 12px;
         }
+
         .font2 {
             font-size: 20px;
             text-align: center;
@@ -86,64 +103,71 @@
             font-weight: bold;
         }
     }
-
 </style>
 
 
 <body>
     <div class="container">
-        <img class="logo" src="../Zuzuzasta-Logo_2.png" alt="Zuzuzasta logotype" onclick="window.location='https://zuzuzasta.github.io/';"> 
 
-        <p class="font"> engineering - photography - design </p> 
+        <div class="button-back-container">
+            <img class="button-back" src="../arrow-small-left.png" alt="back button"
+                onclick="window.location='../index.html';">
+        </div>
 
-            <p class="font2"> About me: </p>
-            <p class="font"> Hi, my name is Zuzanna but you can call me Zuza (or Suzanne). </p>
+        <img class="logo" src="../Zuzuzasta-Logo_2.png" alt="Zuzuzasta logotype"
+            onclick="window.location='https://zuzuzasta.github.io/';">
+
+        <p class="font"> engineering - photography - design </p>
+
+        <h1 class="font2"> About me: </h1>
+        <p class="font"> Hi, my name is Zuzanna but you can call me Zuza (or Suzanne). </p>
 
 
         <div class="text-columns">
             <div class="text-body">
-                <p class="font2"> Engineer: </p>
-                <p class="font"> I’m a materials engineer with over 3 years of experience as materials researcher and a 
-                    Master’s degree in Materials and Manufacturing Engineering from DTU. I am driven by the belief that 
-                    a sustainable society requires sustainable solutions — from minimizing waste and extending component 
-                    lifetimes, to optimizing every step of the manufacturing process. Throughout my professional journey 
-                    I have worked extensively with surface engineering – from two large PVD projects during my studies 
-                    to surface hardening through thermochemical conversion at Expanite. Even though the surface has 
+                <h2 class="font2"> Engineer: </h2>
+                <p class="font"> I’m a materials engineer with over 3 years of experience as materials researcher and a
+                    Master’s degree in Materials and Manufacturing Engineering from DTU. I am driven by the belief that
+                    a sustainable society requires sustainable solutions — from minimizing waste and extending component
+                    lifetimes, to optimizing every step of the manufacturing process. Throughout my professional journey
+                    I have worked extensively with surface engineering – from two large PVD projects during my studies
+                    to surface hardening through thermochemical conversion at Expanite. Even though the surface has
                     become my area of expertise and I proudly call myself a metallurgist, I have shown similar level of
                     passion for other areas of the materials domain, with ceramic materials holding a special place in
-                    my heart. Materials investigation is my forte, I thrive on a cross section of laboratory investigation
-                    and technical writing, having experience with SEM/EDS, XRD, GD-OES, LOM, metallography and mechanical
-                    testing, and being responsible for investigation, analysis and communication of results for multiple 
-                    internal and external projects during my time at Expanite. <br><br>
+                    my heart. Materials investigation is my forte, I thrive on a cross section of laboratory
+                    investigation and technical writing, having experience with SEM/EDS, XRD, GD-OES, LOM, metallography
+                    and mechanical testing, and being responsible for investigation, analysis and communication of
+                    results for multiple internal and external projects during my time at Expanite. <br><br>
 
-                    As a transgender woman I value sensitivity, inclusivity and equality and I bring those values to every
-                    collaborative environment I partake in. I excel in science communication, whether to external stakeholders
-                    or within the organization. As my job requires communicating complex ideas to customers and suppliers as
-                    well as conducting employee trainings, I often tailor the level of complexity to my audience. Having
-                    analytical approach to problem-solving and being detail-oriented are a must in this line of work. I
-                    am always tweaking and improving my work organization processes, which allows me to deliver results
-                    that are comprehensive and trustworthy.
-                </p> 
+                    As a transgender woman I value sensitivity, inclusivity and equality and I bring those values to
+                    every collaborative environment I partake in. I excel in science communication, whether to external
+                    stakeholders or within the organization. As my job requires communicating complex ideas to customers
+                    and suppliers as well as conducting employee trainings, I often tailor the level of complexity to my
+                    audience. Having analytical approach to problem-solving and being detail-oriented are a must in this
+                    line of work. I am always tweaking and improving my work organization processes, which allows me to
+                    deliver results that are comprehensive and trustworthy.
+                </p>
             </div>
 
             <div class="text-body">
-                <p class="font2"> Artist: </p>
+                <h2 class="font2"> Artist: </h2>
                 <p class="font"> I am also an "amateur" photographer. Although perhaps it would be better to use a word
                     "self-taught". I started my journey with photography in late 2022 as a way to help reduce anxiety
                     related to my gender identity. Through frequent photography walks I was able to process my emotions
-                    while simultaneously hidden behind camera lens.  In 2024 I was awarded Honorable Mention at Monovisions
-                    Awards in the landscape photography category, which provided me with the push needed to start taking 
-                    photography more seriously. In 2025 I have joined Dark Gallery in Copenhagen as 
-                    a rookie partner. Working together with the team there, I have decided to shift my artistic focus into
-                    more Queer-aligned photography, which lets me create a dialog with the viewer about gender and queerness.
-                    My work spans artistic imagery, street photography, landscape, architectural detail and portrait. <br><br>
-                
-                    Since high school times I have also called myself a graphic designer. I have been using vector based programs 
-                    (Adobe Illustrator, Inkscape, Affinity) to design logotypes, posters, leaflets and other marketing materials
-                    for various events and businesses. My strong side is creating visual identification for companies.
-                </p>
+                    while simultaneously hidden behind camera lens. In 2024 I was awarded Honorable Mention at
+                    Monovisions Awards in the landscape photography category, which provided me with the push needed to
+                    start taking photography more seriously. In 2025 I have joined Dark Gallery in Copenhagen as a
+                    rookie partner. Working together with the team there, I have decided to shift my artistic focus into
+                    more Queer-aligned photography, which lets me create a dialog with the viewer about gender and
+                    queerness. My work spans artistic imagery, street photography, landscape, architectural detail and
+                    portrait. 
+                    <br><br> 
+                    Since high school times I have also called myself a graphic designer. I have been
+                    using vector based programs (Adobe Illustrator, Inkscape, Affinity) to design logotypes, posters,
+                    leaflets and other marketing materials for various events and businesses. My strong side is creating
+                    visual identification for companies. </p>
 
-                </div>
+            </div>
         </div>
     </div>
 </body>

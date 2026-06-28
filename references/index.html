@@ -15,10 +15,10 @@
 </head>
 
 <style>
-
-    html, body {
-        margin: 0; 
-        height: 100%; 
+    html,
+    body {
+        margin: 0;
+        height: 100%;
         overflow: visible;
     }
 
@@ -27,14 +27,29 @@
         width: auto;
         min-width: 320px;
         display: block;
-        flex-shrink: 0;  
+        flex-shrink: 0;
     }
-    
+
+    img.button-back {
+        height: 36px;
+        width: auto;
+        min-width: 75px;
+        display: block;
+        flex-shrink: 0;
+    }
+
+    .button-back-container {
+
+        justify-content: left;
+        min-width: 80%;
+        margin-bottom: 5%;
+    }
+
     .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items:center;
+        align-items: center;
         min-height: 100vh;
     }
 
@@ -42,7 +57,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items:center;
+        align-items: center;
         width: 80vw;
     }
 
@@ -73,11 +88,11 @@
         margin: 4px 2px;
         transition-duration: 0.4s;
         cursor: pointer;
-        }
+    }
 
     .button1 {
-        background-color: white; 
-        color: black; 
+        background-color: white;
+        color: black;
         font-weight: bold;
         border: 5px solid #191919;
         border-radius: 15px;
@@ -107,6 +122,7 @@
             text-align: center;
             margin-bottom: 12px;
         }
+
         .font2 {
             font-size: 20px;
             text-align: center;
@@ -114,21 +130,33 @@
             font-weight: bold;
         }
     }
-
 </style>
 
 
 <body>
+
+
+
+
+
     <div class="container">
-        <img class="logo" src="../Zuzuzasta-Logo_2.png" alt="Zuzuzasta logotype" onclick="window.location='https://zuzuzasta.github.io/';"> 
 
-        <p class="font"> engineering - photography - design </p> 
+        <div class="button-back-container">
+            <img class="button-back" src="../arrow-small-left.png" alt="back button"
+                onclick="window.location='../index.html';">
+        </div>
 
-        <p class="font2"> Category: engineering and proffesional </p> 
+        <img class="logo" src="../Zuzuzasta-Logo_2.png" alt="Zuzuzasta logotype"
+            onclick="window.location='https://zuzuzasta.github.io/';">
+
+        <p class="font"> engineering - photography - design </p>
+
+        <p class="font2"> Category: engineering and proffesional </p>
 
         <div class="references">
 
-            <button class="button button1" type="submit" onclick="window.open('Recommendation of Zuzanna Stachlewska GDPR.pdf')">
+            <button class="button button1" type="submit"
+                onclick="window.open('Recommendation of Zuzanna Stachlewska GDPR.pdf')">
                 Everlence - Recommendation of Zuzanna Stachlewska (2025)
             </button>
 
@@ -137,11 +165,12 @@
             </button>
         </div>
 
-        <p class="font2"> Category: photography and design </p> 
+        <p class="font2"> Category: photography and design </p>
 
         <div class="references">
 
-            <button class="button button1" onclick="window.location='https://mail.monovisionsawards.com/winners-gallery/monovisions-awards-2024/show/10767';">
+            <button class="button button1"
+                onclick="window.location='https://mail.monovisionsawards.com/winners-gallery/monovisions-awards-2024/show/10767';">
                 Monovisions awards - Honorable mention (2024)
             </button>
 
